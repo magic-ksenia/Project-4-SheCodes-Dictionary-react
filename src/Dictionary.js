@@ -9,6 +9,7 @@ export default function Dictionary() {
     return;
   }
 
+  // API documentation https://dictionaryapi.dev/
   function search(event) {
     event.preventDefault();
     if (keyword) {
