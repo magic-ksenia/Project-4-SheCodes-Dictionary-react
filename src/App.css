@@ -20,5 +20,6 @@
 }
 
 .App-link {
+  text-decoration: underline;
   color: #282c34;
 }
