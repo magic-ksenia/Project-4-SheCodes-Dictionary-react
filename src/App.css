@@ -25,3 +25,9 @@
   text-decoration: underline;
   color: #282c34;
 }
+main {
+  margin: 0 60px;
+}
+/* bring in normalize.css styles
+@import-normalize;  */
+/* rest of app styles */
