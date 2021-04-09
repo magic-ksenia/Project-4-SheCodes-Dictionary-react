@@ -1,21 +1,19 @@
 .App {
-  text-align: center;
+  margin: 20px;
   background-color: white;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   color: #282c34;
 }
 
 .App-header {
   color: #282c34;
+  text-align: center;
   margin: 20px auto;
   font-weight: 900;
   font-size: 4vw;
 }
 
 .App-footer {
+  text-align: center;
   margin: 20px auto;
   font-size: 1vw;
   color: #282c34;
@@ -24,9 +22,6 @@
 .App-link {
   text-decoration: underline;
   color: #282c34;
-}
-main {
-  margin: 0 60px;
 }
 /* bring in normalize.css styles
 @import-normalize;  */
