@@ -1,10 +1,85 @@
-.Transcription {
-  font-size: 20px;
-  line-height: 35px;
+.Dictionary section {
+  background: #f3f1f1;
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px 0 rgba(84, 61, 99, 0.555);
+}
+
+h2.Word {
+  font-size: 3.5vw;
+  margin-bottom: 5px;
+}
+
+h2.Meaning {
+  font-size: 3vw;
+  text-align: left;
+  font-weight: 700;
+}
+
+.Dictionary h3 {
+  font-size: 3vw;
+  text-align: center;
+}
+
+.Dictionary input {
+  width: 100%;
+  color: #3d1635;
+  font-size: 2vw;
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: 2px solid #a7548760;
+}
+
+span.Transcription {
+  font-size: 3vw;
+  margin: 0;
+  padding: 0;
 }
 
 audio {
-  width: 300px;
+  width: 220px;
   height: 40px;
   vertical-align: middle;
+  margin-left: 10px;
+}
+
+strong {
+  margin: 10px 0;
+  font-size: 3vw;
+}
+
+.Dictionary .Hint {
+  font-size: 1vw;
+  margin-top: 5px;
+  margin-left: 8px;
+}
+
+.Definition {
+  font-size: 2.5vw;
+  margin: 8px 0;
+}
+
+.Dictionary .Examples {
+  font-size: 2.3vw;
+  color: #6d6b6b;
+  margin: 2px 0 5px 22px;
+}
+
+.Synonyms {
+  font-size: 2vw;
+  margin: 5px 0 5px 25px;
+}
+.synonym {
+  font-size: 11px;
+  padding: 1px 11px 2px;
+  margin: 1px 1px 3px 6px;
+  overflow-wrap: break-word;
+  border: 0.5px solid #f5c4cedc;
+  background-color: #f7d6dde5;
+  border-radius: 32px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow-wrap: break-word;
 }

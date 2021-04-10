@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
+import "./Dictionary.css";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
@@ -28,18 +29,22 @@ export default function Dictionary() {
   //  https://api.dictionaryapi.dev/api/v2/entries/<language_code>/<word>
   return (
     <div className="Dictionary">
-      <form className="form-inline" onSubmit={search}>
-        <input
-          className="form-control mr-sm-2"
-          type="search"
-          placeholder="Enter a word..."
-          autoFocus="on"
-          onChange={handleKeywordChange}
-        />
-        <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
-          Search
-        </button>
-      </form>
+      <section>
+        <h3>What word do you want to look up?</h3>
+        <form onSubmit={search}>
+          <input
+            className="form-control"
+            type="search"
+            placeholder="Enter a word..."
+            autoComplete="off"
+            autoFocus="on"
+            onChange={handleKeywordChange}
+          />
+        </form>
+        <div className="Hint">
+          i.g. music, science, travel, establish ,harmony...
+        </div>
+      </section>
       <Results results={results} />
     </div>
   );
