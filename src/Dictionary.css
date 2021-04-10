@@ -3,11 +3,11 @@
   padding: 30px;
   margin: 20px 0;
   border-radius: 10px;
-  box-shadow: 0 5px 5px 0 rgba(84, 61, 99, 0.555);
+  box-shadow: 0 4px 4px 0 rgba(167, 108, 158, 0.3);
 }
 
 h2.Word {
-  font-size: 3.5vw;
+  font-size: 4vw;
   margin-bottom: 5px;
 }
 
@@ -26,27 +26,37 @@ h2.Meaning {
   width: 100%;
   color: #3d1635;
   font-size: 2vw;
-  border-radius: 10px;
-  padding: 10px 15px;
-  border: 2px solid #a7548760;
+  border-radius: 15px;
+  padding: 15px 15px;
+  border: 1px solid #aa6f9393;
+}
+
+.Dictionary input.form-control:active,
+.Dictionary input.form-control:focus {
+  border-color: rgb(167, 108, 158);
+  box-shadow: 0 0 0 0.2rem rgba(167, 108, 158, 0.35);
 }
 
 span.Transcription {
   font-size: 3vw;
+  color: #834777;
   margin: 0;
   padding: 0;
 }
 
 audio {
   width: 220px;
-  height: 40px;
+  height: 37px;
   vertical-align: middle;
   margin-left: 10px;
+  border: 1px solid #a7548760;
+  border-radius: 20px;
 }
 
 strong {
+  color: #834777;
   margin: 10px 0;
-  font-size: 3vw;
+  font-size: 2.8vw;
 }
 
 .Dictionary .Hint {
@@ -63,17 +73,17 @@ strong {
 .Dictionary .Examples {
   font-size: 2.3vw;
   color: #6d6b6b;
-  margin: 2px 0 5px 22px;
+  margin: 2px 0 5px 8px;
 }
 
 .Synonyms {
   font-size: 2vw;
-  margin: 5px 0 5px 25px;
+  margin: 5px 0 5px 17px;
 }
 .synonym {
   font-size: 11px;
   padding: 1px 11px 2px;
-  margin: 1px 1px 3px 6px;
+  margin: 0px 5px 3px 0px;
   overflow-wrap: break-word;
   border: 0.5px solid #f5c4cedc;
   background-color: #f7d6dde5;

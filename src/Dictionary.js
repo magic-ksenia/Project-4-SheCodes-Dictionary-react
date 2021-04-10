@@ -49,6 +49,7 @@ export default function Dictionary(props) {
               autoComplete="off"
               autoFocus="on"
               onChange={handleKeywordChange}
+              defaultValue={props.defaultKeyword}
             />
           </form>
           <div className="Hint">
