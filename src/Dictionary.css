@@ -1,31 +1,31 @@
 .Dictionary section {
   background: #f3f1f1;
   padding: 30px;
-  margin: 20px 0;
+  margin: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(167, 108, 158, 0.3);
 }
 
 h2.Word {
-  font-size: 4vw;
+  font-size: 3.8vw;
   margin-bottom: 5px;
 }
 
 h2.Meaning {
-  font-size: 3vw;
+  font-size: 2.8vw;
   text-align: left;
   font-weight: 700;
 }
 
 .Dictionary h3 {
-  font-size: 3vw;
+  font-size: 2.8vw;
   text-align: center;
 }
 
 .Dictionary input {
   width: 100%;
   color: #3d1635;
-  font-size: 2vw;
+  font-size: 1.8vw;
   border-radius: 15px;
   padding: 15px 15px;
   border: 1px solid #aa6f9393;
@@ -38,17 +38,17 @@ h2.Meaning {
 }
 
 span.Transcription {
-  font-size: 3vw;
+  font-size: 2.7vw;
   color: #834777;
-  margin: 0;
+  margin-right: 10px;
   padding: 0;
 }
 
 audio {
-  width: 220px;
+  width: 240px;
   height: 37px;
   vertical-align: middle;
-  margin-left: 10px;
+  margin: 0;
   border: 1px solid #a7548760;
   border-radius: 20px;
 }
@@ -56,7 +56,7 @@ audio {
 strong {
   color: #834777;
   margin: 10px 0;
-  font-size: 2.8vw;
+  font-size: 2.4vw;
 }
 
 .Dictionary .Hint {
@@ -66,12 +66,12 @@ strong {
 }
 
 .Definition {
-  font-size: 2.5vw;
+  font-size: 2.3vw;
   margin: 8px 0;
 }
 
 .Dictionary .Examples {
-  font-size: 2.3vw;
+  font-size: 2vw;
   color: #6d6b6b;
   margin: 2px 0 5px 8px;
 }
@@ -80,8 +80,10 @@ strong {
   font-size: 2vw;
   margin: 5px 0 5px 17px;
 }
+
 .synonym {
   font-size: 11px;
+  line-height: 18px;
   padding: 1px 11px 2px;
   margin: 0px 5px 3px 0px;
   overflow-wrap: break-word;
