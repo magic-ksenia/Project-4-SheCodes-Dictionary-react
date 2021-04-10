@@ -6,7 +6,7 @@ export default function App() {
     <div className="App">
       <h1 className="App-header">Dictionary</h1>
       <main>
-        <Dictionary />
+        <Dictionary defaultKeyword="seaside" />
       </main>
       <p className="App-footer">
         Coded by{" "}
