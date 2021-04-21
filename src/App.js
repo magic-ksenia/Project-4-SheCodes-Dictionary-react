@@ -15,6 +15,7 @@ export default function App() {
           href="https://www.linkedin.com/in/oksana-stalbovskaya-19901126/"
           target="_blank"
           rel="noreferrer"
+          title="Stalbovskaya Oksana LinkedIn profile"
         >
           Oksana Stalbovskaya
         </a>{" "}
@@ -24,6 +25,7 @@ export default function App() {
           href="https://github.com/magic-ksenia/dictionary-app-react"
           target="_blank"
           rel="noreferrer"
+          title="See full code in Github. repository"
         >
           {" "}
           GitHub
