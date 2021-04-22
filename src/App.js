@@ -22,7 +22,7 @@ export default function App() {
         and is open-sourced on{" "}
         <a
           className="App-link"
-          href="https://github.com/magic-ksenia/dictionary-app-react"
+          href="https://github.com/magic-ksenia/Project-4-SheCodes-dictionary-react"
           target="_blank"
           rel="noreferrer"
           title="Take a look at full code in Github repository"
