@@ -25,7 +25,7 @@ export default function App() {
           href="https://github.com/magic-ksenia/dictionary-app-react"
           target="_blank"
           rel="noreferrer"
-          title="See full code in Github. repository"
+          title="Take a look at full code in Github repository"
         >
           {" "}
           GitHub
