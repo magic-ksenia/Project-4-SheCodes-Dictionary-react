@@ -4,26 +4,33 @@ export default function Photos(props) {
   if (props.photos) {
     return (
       <section className="Photos">
-        <div className="row">
+        <ul>
           {props.photos.map(function (photo, index) {
             return (
-              <div className="col-4" key={index}>
+              <li key={index}>
                 <a
-                  href={photo.src.original}
+                  href={photo.pageURL}
                   target="_blank"
                   rel="noreferrer"
-                  title="photo from Pixel.com"
+                  title="Photos provided by Pixabay.com"
                 >
                   <img
-                    src={photo.src.landscape}
-                    alt={photo.photographer}
-                    className="img-fluid"
+                    className="image-search"
+                    src={photo.webformatURL}
+                    alt={photo.tags}
+                    loading="lazy"
                   />
                 </a>
-              </div>
+              </li>
             );
           })}
-        </div>
+          <li></li>
+        </ul>
+        <img
+          className="pixabay-logo"
+          src="https://pixabay.com/static/img/logo.png"
+          alt="Pixabay logo"
+        />
       </section>
     );
   } else {

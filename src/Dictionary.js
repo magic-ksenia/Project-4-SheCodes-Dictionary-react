@@ -14,8 +14,8 @@ export default function Dictionary(props) {
     setResults(response.data[0]);
   }
 
-  function handlePixelsResponse(response) {
-    setPhotos(response.data.photos);
+  function handlePixabayResponse(response) {
+    setPhotos(response.data.hits);
   }
 
   function search() {
@@ -23,12 +23,15 @@ export default function Dictionary(props) {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     axios.get(apiUrl).then(handleDictionaryResponse);
 
-    // API documentation https://www.pexels.com/api/documentation/
-    const apiKeyPixels =
-      "563492ad6f91700001000001221a985b21734072995e516618111481";
+    /*API documentation https://www.pexels.com/api/documentation/
+    const apiKeyPixels ="563492ad6f91700001000001221a985b21734072995e516618111481";
     let apiUrlPexels = `https://api.pexels.com/v1/search?query=${keyword}&per_page=12`;
-    let headers = { Authorization: `Bearer ${apiKeyPixels}` };
-    axios.get(apiUrlPexels, { headers: headers }).then(handlePixelsResponse);
+    axios.get(apiUrlPexels, { headers: { Authorization: `Bearer ${apiKeyPixels}` }, }).then(handlePixelsResponse);*/
+
+    // API Documentation https://pixabay.com/api/docs/
+    const apiKeyPixabay = "21483946-5b64b419f6eb3fc5f8ee9c57a";
+    let apiUrlPixabay = `https://pixabay.com/api/?key=${apiKeyPixabay}&q=${keyword}&image_type=photo&per_page=12`;
+    axios.get(apiUrlPixabay).then(handlePixabayResponse);
   }
 
   function handleSubmit(event) {
