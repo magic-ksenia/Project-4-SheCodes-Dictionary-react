@@ -109,7 +109,7 @@ strong {
 }
 
 .Photos li {
-  height: 15vh;
+  height: 20vh;
   flex-grow: 1;
   padding: 5px;
 }

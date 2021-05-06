@@ -30,7 +30,7 @@ export default function Dictionary(props) {
 
     // API Documentation https://pixabay.com/api/docs/
     const apiKeyPixabay = "21483946-5b64b419f6eb3fc5f8ee9c57a";
-    let apiUrlPixabay = `https://pixabay.com/api/?key=${apiKeyPixabay}&q=${keyword}&image_type=photo&per_page=12`;
+    let apiUrlPixabay = `https://pixabay.com/api/?key=${apiKeyPixabay}&q=${keyword}&image_type=photo&per_page=16`;
     axios.get(apiUrlPixabay).then(handlePixabayResponse);
   }
 
